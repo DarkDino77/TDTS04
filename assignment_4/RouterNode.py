@@ -113,7 +113,8 @@ class RouterNode():
         route_output = f"Our distance vector and routes:\n" + header_row + "\n" + "-"*len(header_row) + "\n"
         route_output += " cost   |"
 
-        # for cost in self.costs: #If print costs instead of costs_table
+        #for cost in self.costs: #If print costs instead of costs_table
+
         for cost in self.costs_table[self.myID]:
             route_output += "{:>5}".format(cost)
 
